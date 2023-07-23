@@ -1,0 +1,112 @@
+body{
+    background-color: #eff2fb;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.main{
+    font-family: 'Mukta', sans-serif;
+
+}
+
+.BUTTON_QZK {
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    border-radius: 43px;
+    color: #E4E4E4;
+    font-family: 'Mukta', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 20px;
+    text-shadow: 1px -1px 0 #000000;
+    border: solid #383337 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ 
+
+
+/* CSS */
+.button-18 {
+  align-items: center;
+  background-color: #383337;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Mukta', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+.button-18:hover,
+.button-18:focus { 
+  background-color: #16437E;
+  color: #ffffff;
+}
+
+.button-18:active {
+  background: #09223b;
+  color: rgb(255, 255, 255, .7);
+}
+
+.button-18:disabled { 
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, .08);
+  color: rgba(0, 0, 0, .3);
+}
+
+
+.img{
+    padding-top: 40px;
+    height: 800px;
+    padding-right: 60px;
+    float: right;
+}
+
+
+nav {
+    background-color: #eff2fb; 
+  }
+  
+  nav ul {
+    list-style: none; /* Remove the default list bullet points */
+    padding: 0; /* Remove any default padding */
+    margin: 0; /* Remove any default margin */
+  }
+  
+  nav li {
+    display: inline-block; /* Display the items in a single line */
+    margin-right: 20px; /* Add some space between the items (adjust as needed) */
+  }
+  
+  nav li:last-child {
+    margin-right: 0; /* Remove the right margin from the last item */
+  }
+  
+  nav a {
+    text-decoration: none; /* Remove the underline from the links */
+    color: #333; /* Set the text color */
+    padding: 10px; /* Add some padding to make the clickable area larger */
+    
+  }
