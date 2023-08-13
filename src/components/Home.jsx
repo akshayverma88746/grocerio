@@ -1,29 +1,33 @@
 import React from 'react'
 import "./home.css"
 import "./footer.css"
-// import mainimg from '../images/main.png';
-// import background from "images/Abstract.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import State from './State'
+
 const Home = () => {
   return (
     <div className="back">
         <body>
-            <nav id="nav">
-                <ul>
-                    <li>
-                        <h1 id="heading" style={{fontSize:'30px', paddingLeft: '50px', paddingTop: '10px'}}><span style={{color: '#e7b031'}}>G</span>rocerio</h1>
-                    </li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Products</a>
-                    </li>
-                    <div class="buttons">
-                        <li class="but1"><a class="button-18" href="#">Sign up</a></li>
-                        <li class="but1"><a class="button-18" href="#">Login</a></li>
-                    </div>
-                </ul>
-            </nav>
+            <div class="hero">
+                <nav>
+                    <h2 class="logo"><span style={{color: '#e7b031'}}>G</span>rocerio</h2>
+                    <ul>
+                        <div className='comp' style={{paddingRight: '35rem'}}>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Products</a></li>
+                        </div>
+                    </ul>
+                        <div className='search-box'>
+                            <input  className="search-txt" type="text" name=" " placeholder='Type to search'/>
+                            <a className='search-btn' href='#'>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a> 
+                        </div>
+                        <button type="button" className='button-18'>Sign In</button>
+                </nav>
+            </div>
             <div class="img-container">
                 <img src="images/main.png" alt="main" class="img" />
             </div>
@@ -58,7 +62,7 @@ const Home = () => {
             </div>
     
             {/* <!--Vegetable setion --> */}
-            <div class= "main-glass" style={{align: "center"}}>
+            <div class= "main-glass">
                 <div class="container">
                     <h1 class="fruits">Fruits</h1>
                     <div class="element">
@@ -187,7 +191,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-
+            <State/>
             {/* <!-- --About---- --> */}
             <div class="about-glass">
                 <section id="about">

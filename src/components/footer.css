@@ -1,14 +1,14 @@
 
 .footer{
-    margin-top: 150px;
-    width: 80%;
+    margin-left: 0px;
+    width: 100%;
     padding: 100px 10%;
     color:black;
     display: flex;
   }
   .footer div{
-    padding-top:4100px;
-    padding-left: 90px;
+    padding-top:276rem;
+    padding-left: 9rem;
     text-align: center;
   }
   .col-2{
@@ -85,7 +85,7 @@
     z-index: 9;
   }
   .arrow-btn a{
-    height: 25px;
+    height: 26px;
     width: 32px;
     text-align: center;
     background: #333131;

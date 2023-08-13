@@ -1,10 +1,11 @@
 .back{
   width: 100%;
   background: url("Abstract.png") fixed no-repeat center;
+  background-size: cover;
+  
 }
 
 body{
-    /* margin-left: 50px; */
     margin-top: 0px;
     font-family: 'Mukta', sans-serif; 
    
@@ -18,8 +19,78 @@ body{
   background: linear-gradient(transparent,#ffcf36);
   border-radius: 6px;
 }
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 10%;
+  }
+
+.logo{
+  color: #383337;
+  font-size: 2.3rem;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+  }
+  
+nav ul li a{
+    color: #383337;
+    text-decoration: none;
+    font-weight: 750;
+    font-size: 1.2rem;
+}
+
+.search-box{
+  margin-left: 40px;
+  transform: translate (-50%, -50%);
+  background: #383337;
+  height: 40px;
+  border-radius: 40px;
+  padding: 0px;
+}
+
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{
+  background: white;
+  color: #383337;
+}
 
 
+.search-btn{
+  color: white;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #383337;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.search-txt{
+  border:none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 15px;
+  transition: 0.4s;
+  line-height: 38px;
+  width: 0px;
+}
 /* CSS */
 .button-18 {
   align-items: center;
@@ -66,32 +137,7 @@ body{
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
-
-  
-  nav ul {
-    list-style: none; /* Remove the default list bullet points */
-    padding: 0; /* Remove any default padding */
-    margin: 0; /* Remove any default margin */
-  }
-  
-  nav li {
-    display: inline-block; /* Display the items in a single line */
-    margin-right: 20px; /* Add some space between the items (adjust as needed) */
-  }
-  
-  nav li:last-child {
-    margin-right: 0; /* Remove the right margin from the last item */
-  }
-  
-  nav a {
-    text-decoration: none; /* Remove the underline from the links */
-    color: #333; /* Set the text color */
-    padding: 10px; /* Add some padding to make the clickable area larger */
-    
-  }
-  
-  
-  
+ 
   .content {
     float: right; /* Float the container to the right */
   }
@@ -198,14 +244,14 @@ body{
   border-right: 2px solid rgba(255, 255, 255, .2);
   border-bottom: 2px solid rgba(255, 255, 255,.2);
   backdrop-filter: blur(10px);
-  top: 3200px;
+  top: 3400px;
  }
  
  .cont-glass{
   margin-left: 100px;
   position: absolute;
   width: 90%;
-  height: 850px;
+  height: 60rem;
   background:rgba(255, 255, 255, .5);
   box-shadow: 0 25px 45px rgba(0, 0, 0,.2);
   border-radius: 50px;
@@ -213,7 +259,7 @@ body{
   border-right: 2px solid rgba(255, 255, 255, .2);
   border-bottom: 2px solid rgba(255, 255, 255,.2);
   backdrop-filter: blur(10px);
-  top: 4200px;
+  top: 4400px;
  }
  .contact{ 
   position: absolute;
@@ -399,8 +445,9 @@ scrollbar-width: none;
 }
    
 .map_section{
-  width:35%;
-  height: 20%;
+  margin-left: 8rem;
+  width:30%;
+  height: 10%;
   border-radius: 4px;
 
 } 
@@ -421,6 +468,7 @@ scrollbar-width: none;
   padding: 35px 30px 35px 100px;
   box-shadow: 5px 5px rgba(68, 27,5,0.12);
   border:1px solid rgba(143, 143, 143);
+  margin-bottom: 1rem;
 
 }
  
@@ -467,6 +515,7 @@ scrollbar-width: none;
 /* Styling for the tag title */
 .tag_title {
   padding-top: 0px;
+  margin-left: 21rem;
   font-size: 2rem;
   font-weight: 700;
   color: #e7ad31;; /* Blue color */
@@ -485,6 +534,7 @@ scrollbar-width: none;
 /* Style for the description */
 .desc {
   font-size: 1.2rem;
+  margin-left: 31rem;
   color: #555555; /* Dark gray color */
   margin-bottom: 1.5rem;
   line-height: 1.6; /* Increase line height for better readability */
@@ -551,7 +601,7 @@ here is about us */
   position: relative;
   width: 97%;
   height: 0%;
-  padding: 60px 0px;
+  padding: 1rem 55rem;
   display: flex;
   align-items: center;
   flex-direction: column;
