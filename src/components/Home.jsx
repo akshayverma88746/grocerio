@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 import {BrowserRouter as Router, Link, NavLink} from "react-router-dom";
-import "./home.css"
-import "./footer.css"
+import "./home.css";
+import "./footer1.css"
 import State from './State'
 import Navbar from './Navbar';
+import Footer from './Footer';
 const Home = () => {
   return (
     <div className="back">
@@ -243,48 +244,7 @@ const Home = () => {
                     </div>
                 </section>
             </div>
-            {/* <!-- --Footer---- --> */}
-            <footer>
-                <div class="footer">
-                    <div class="arrow-btn">
-                        <a href="#nav"><span class="fas fa-angle-up"></span></a>
-                    </div>
-                    <div class="col-1">
-                        <h3>GROCERIO</h3>
-                        <a href="#"><b>Home</b></a>
-                        |
-                        <a href="#"><b> About</b></a>
-                        |
-                        <a href="#"><b>Contact</b></a>
-                        |
-                        <a href="#"><b>Blog</b></a>
-                        &nbsp
-                        <br/>
-                        <p> Copyright @ 2023 <strong style={{color: 'green'}}>Grocerio</strong>
-                        All rights reserved</p>
-                    </div>
-                    <div class="col-2">
-                        <h3>NEWSLETTER</h3>
-                        <form>
-                            <input type="email" placeholder="Your Email Address" required/>
-                            <br/>
-                            <button type="submit">SUBSCRIBE NOW</button>
-                        </form>
-                    </div>
-                    <div class="col-3">
-                        <h3>CONTACT</h3>
-                        <p style={{color: 'rgb(0, 100, 0)'}}>
-                        <i style={{color: 'black'}} class="fa-solid fa-phone-volume"></i>
-                        &nbsp
-                        +91 926423XXXX
-                        <br/>
-                        <i style={{color: 'black'}} class="fa-solid fa-envelope"></i>
-                        &nbsp
-                        grocerio@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </footer>
+            <Footer/>
         </body>
     </div>
   )

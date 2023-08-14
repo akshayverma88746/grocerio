@@ -4,7 +4,9 @@
   background-size: cover;
   
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
     margin-top: 0px;
     font-family: 'Mukta', sans-serif; 
