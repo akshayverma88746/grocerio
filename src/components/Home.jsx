@@ -1,33 +1,14 @@
 import React from 'react'
+import {BrowserRouter as Router, Link, NavLink} from "react-router-dom";
 import "./home.css"
 import "./footer.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import State from './State'
-
+import Navbar from './Navbar';
 const Home = () => {
   return (
     <div className="back">
         <body>
-            <div class="hero">
-                <nav>
-                    <h2 class="logo"><span style={{color: '#e7b031'}}>G</span>rocerio</h2>
-                    <ul>
-                        <div className='comp' style={{paddingRight: '35rem'}}>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Service</a></li>
-                            <li><a href="#">Products</a></li>
-                        </div>
-                    </ul>
-                        <div className='search-box'>
-                            <input  className="search-txt" type="text" name=" " placeholder='Type to search'/>
-                            <a className='search-btn' href='#'>
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </a> 
-                        </div>
-                        <button type="button" className='button-18'>Sign In</button>
-                </nav>
-            </div>
+            <Navbar/>
             <div class="img-container">
                 <img src="images/main.png" alt="main" class="img" />
             </div>
@@ -42,21 +23,21 @@ const Home = () => {
             <div>
                 <div class="glass1">
                     <a href="#">
-                        <img src="../images/weigh-scale.png" id="comp" />
+                        <img src="../images/weigh-scale.png" alt="weight" id="comp" />
                         <p id="ptag1">Compare</p>
                     </a>
                 </div>
     
                 <div class="glass">
                     <a href="#">
-                        <img src="../images/carrot.svg" id="comp" />
+                        <img src="../images/carrot.svg" alt="order" id="comp" />
                         <p id="ptag1">Order Now</p>
                     </a>
                 </div>
     
                 <div class="contact">
                     <a href="#contact">
-                        <img src="../images/message.svg" id="msg" />
+                        <img src="../images/message.svg" alt="contact" id="msg" />
                     </a>
                 </div>
             </div>
@@ -67,56 +48,56 @@ const Home = () => {
                     <h1 class="fruits">Fruits</h1>
                     <div class="element">
                         <div class="cards">
-                            <img src="../images/mango.webp"/>
+                            <img src="../images/mango.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Mango</h1>
                                 <p>Rs 80/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="/images/guava.webp"/>
+                            <img src="/images/guava.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Guava</h1>
                                 <p>Rs 60/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/apple.webp"/>
+                            <img src="./images/apple.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Apple</h1>
                                 <p>Rs 90/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/banana.webp"/>
+                            <img src="./images/banana.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Bannana</h1>
                                 <p>Rs 40/dozen</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/grapes.webp"/>
+                            <img src="./images/grapes.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Grapes</h1>
                                 <p>Rs 120/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/orange.webp"/>
+                            <img src="./images/orange.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Oranges</h1>
                                 <p>Rs 80/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/pomegranate.webp"/>
+                            <img src="./images/pomegranate.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Pomegranate</h1>
                                 <p>Rs 150/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/pineapple.webp"/>
+                            <img src="./images/pineapple.webp" alt="fruit"/>
                             <div class="info">
                                 <h1 class="text">Pineapple</h1>
                                 <p>Rs 50/kg</p>
@@ -127,14 +108,14 @@ const Home = () => {
                     <h1 class="vegetables">Vegetable</h1>
                     <div class="element">
                         <div class="cards">
-                            <img src="./images/brinjal.jpg"/>
+                            <img src="./images/brinjal.jpg" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Brinjal</h1>
                                 <p>Rs 40/kg</p>
                             </div>
                         </div>
                         <div class="cards">
-                            <img src="./images/cabbage.webp"/>
+                            <img src="./images/cabbage.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Cabbage</h1>
                                 <p>Rs 30/kg</p>
@@ -142,7 +123,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/capsicum.webp"/>
+                            <img src="./images/capsicum.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Capsicum</h1>
                                 <p>Rs 80/kg</p>
@@ -150,7 +131,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/cauliflower.webp"/>
+                            <img src="./images/cauliflower.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Cauliflower</h1>
                                 <p>Rs 30/kg</p>
@@ -158,7 +139,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/ladyfinger.webp"/>
+                            <img src="./images/ladyfinger.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Lady Fnger</h1>
                                 <p>Rs 30/kg</p>
@@ -166,7 +147,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/peas.webp"/>
+                            <img src="./images/peas.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Peas</h1>
                                 <p>Rs 50/kg</p>
@@ -174,7 +155,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/pumpkin.webp"/>
+                            <img src="./images/pumpkin.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Pumpkin</h1>
                                 <p>Rs 80/kg</p>
@@ -182,7 +163,7 @@ const Home = () => {
             
                         </div>
                         <div class="cards">
-                            <img src="./images/carrot.webp"/>
+                            <img src="./images/carrot.webp" alt="vege"/>
                             <div class="info">
                                 <h1 class="text">Carrot</h1>
                                 <p>Rs 40/kg</p>
@@ -222,7 +203,7 @@ const Home = () => {
                         <div class="contact_box_section">
                         <div class="map_section">
                             <div style={{width: '100%'}}>
-                                <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Clement%20town,Dehradun+(Food)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Population mapping</a></iframe>
+                                <iframe style={{borderRadius:"30px"}} width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.3791616049!2d77.98489026778655!3d30.270003229183253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9518933719%3A0xc25309614b33ceb1!2sBharu%20Wala%20Grant%2C%20Uttarakhand%20248002!5e0!3m2!1sen!2sin!4v1691942158357!5m2!1sen!2sin"><a href="https://www.maps.ie/population/">Population mapping</a></iframe>
                             </div>
                         </div>
                         <div class="form_section">

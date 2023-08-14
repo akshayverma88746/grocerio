@@ -5,11 +5,13 @@
     padding: 100px 10%;
     color:black;
     display: flex;
+    
   }
   .footer div{
     padding-top:276rem;
     padding-left: 9rem;
     text-align: center;
+    
   }
   .col-2{
     flex-grow: 0.5;
