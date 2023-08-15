@@ -1,12 +1,17 @@
 import React from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faLock, faEnvelope ,faEye, faEyeSlash} from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import * as Components from './components';
 import "./Styles.css";
 
 function Login2() {
     const [signIn, toggle] = React.useState(true);
+     const [show ,setshow] = useState(false);
+    const toggleispassvis = () => {
+        setshow(!show);
+    }
     return (
     <div className="lg">
         <Components.Container>
@@ -15,7 +20,8 @@ function Login2() {
                     <Components.Title>Create Account</Components.Title>
                     <Components.Input type='text' placeholder='Name' />
                     <Components.Input type='email' placeholder='Email' />
-                    <Components.Input type='password' placeholder='Password' />
+                    <Components.Input type={(show) ? "text":"password"} placeholder='Password' />
+                    <FontAwesomeIcon icon={show ? faEyeSlash : faEye} className='passicon'onClick={toggleispassvis} />
                     <Components.Button>Sign Up</Components.Button>
                     <p className="social-text loginp">Or Sign up with social platforms</p>
                     <div className="social-media">
@@ -33,7 +39,8 @@ function Login2() {
                 <Components.Form>
                     <Components.Title>Sign in</Components.Title>
                     <Components.Input type='email' placeholder='Email' />
-                    <Components.Input type='password' placeholder='Password' />
+                    <Components.Input type={(show) ? "text":"password"} placeholder='Password' />             
+                    <FontAwesomeIcon icon={show ? faEyeSlash : faEye} className='passign' onClick={toggleispassvis} />
                     <Components.Anchor href='#' className="social-text">Forgot your password?</Components.Anchor>
                     <Components.Button>Sign In</Components.Button>
                     <p className="social-text loginp"> Sign in with social platforms</p>
@@ -62,7 +69,7 @@ function Login2() {
                     </Components.LeftOverlayPanel>
 
                     <Components.RightOverlayPanel signinIn={signIn}>
-                        <Components.Title>Hello, Friend!</Components.Title>
+                        <Components.Title>Hello, User!</Components.Title>
                         <Components.Paragraph>
                             Enter Your personal details and start journey with us
                         </Components.Paragraph>
