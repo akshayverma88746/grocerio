@@ -45,4 +45,16 @@
     /* padding: 0.rem 0; */
     font-size: 0.7rem;
   }
+ .passicon{
+    top:51.5%;
+    margin-left: 20px;
+    right: 13%;
+    position:absolute;
+    cursor: pointer;
+}
+.passign {
+    top:40.5%;
+    right: 13%;
+    position:absolute;
+}
  
