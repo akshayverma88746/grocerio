@@ -3,84 +3,95 @@
         "id": "g1",
         "name": "Honey",
         "price": 20,
-        "image": "./grocery/honey.png"
+        "image": "./grocery/honey.png",
+         "quantity": 1
 
     },
     {
         "id": "g2",
         "name": "Chilly",
         "price": 20,
-        "image": "./grocery/chilly.png"
+        "image": "./grocery/chilly.png",
+         "quantity": 1
 
     },
     {
         "id": "g3",
         "name": "Clove",
         "price": 20,
-        "image": "./grocery/clove.png"
+        "image": "./grocery/clove.png",
+         "quantity": 1
 
     },
     {
         "id": "g4",
         "name": "Coffee",
         "price": 20,
-        "image": "./grocery/coffee.jpg"
-
+        "image": "./grocery/coffee.jpg",
+        "quantity": 1
     },
     {
         "id": "g5",
         "name": "Jeera",
         "price": 20,
-        "image": "./grocery/jeera.png"
+        "image": "./grocery/jeera.png",
+         "quantity": 1
 
     },
     {
         "id": "g6",
         "name": "Black-Pepper",
         "price": 20,
-        "image": "./grocery/blackpepper.png"
+        "image": "./grocery/blackpepper.png",
+         "quantity": 1
 
     },
     {
         "id": "g7",
         "name": "Cardomon",
         "price": 20,
-        "image": "./grocery/cardamom.png"
+        "image": "./grocery/cardamom.png",
+         "quantity": 1
 
     },
     {
         "id": "g8",
         "name": "Haldi",
         "price": 20,
-        "image": "./grocery/haldi-turmeric-powder.png"
+        "image": "./grocery/haldi-turmeric-powder.png",
+         "quantity": 1
 
     },
     {
         "id": "g9",
         "name": "Chilly",
         "price": 20,
-        "image": "./grocery/chilly.png"
+        "image": "./grocery/chilly.png",
+         "quantity": 1
 
     },
     {
         "id": "g10",
         "name": "Fennel",
         "price": 20,
-        "image": "./grocery/fennel-seeds.png"
+        "image": "./grocery/fennel-seeds.png",
+         "quantity": 1
 
     },
     {
         "id": "g11",
         "name": "Thyme",
         "price": 20,
-        "image": "./grocery/thyme-seeds.png"
+        "image": "./grocery/thyme-seeds.png",
+         "quantity": 1
 
     },
     {
         "id": "g12",
         "name": "Dalchini",
         "price": 20,
-        "image": "./grocery/dalchini.png"
+        "image": "./grocery/dalchini.png",
+         "quantity": 1
 
     }
 ]

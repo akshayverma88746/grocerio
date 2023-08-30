@@ -2,7 +2,7 @@ import React from 'react'
 import './products.css';
 import Fruit from './fruit.json';
 
-function Products() {
+function Products({handleClick,size,setshow}) {
   return (
    <>
 <h1 className="f-fruits">Fruits</h1>
@@ -15,7 +15,7 @@ function Products() {
                 <div className="info">
                     <h1 className="text">{item.name}</h1>
                     <p>{item.price}/Kg</p>
-                    <button className='btn'>Add to cart
+                    <button className='btn' onClick={() => handleClick(item)}>Add to cart
                     </button>
                 </div>
             </div>

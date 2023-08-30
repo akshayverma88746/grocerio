@@ -3,84 +3,93 @@
         "id": "v1",
         "name": "Bittergourd",
         "price": 20,
-        "image": "./vegetables/bittergourd.png"
-
+        "image": "./vegetables/bittergourd.png",
+       "quantity": 1
     },
     {
         "id": "v2",
         "name": "Carrot",
         "price": 20,
-        "image": "./vegetables/carrot.png"
-
+        "image": "./vegetables/carrot.png",
+        "quantity": 1
     },
     {
         "id": "v3",
         "name": "Cauliflower",
         "price": 20,
-        "image": "./vegetables/cauliflower.png"
-
-    },
+        "image": "./vegetables/cauliflower.png",
+        "quantity": 1
+        },
     {
         "id": "v4",
         "name": "Capsicum",
         "price": 20,
-        "image": "./vegetables/capsicum.png"
+        "image": "./vegetables/capsicum.png",
+        "quantity": 1
 
     },
     {
         "id": "v5",
         "name": "Peas",
         "price": 20,
-        "image": "./vegetables/peas.png"
+        "image": "./vegetables/peas.png",
+        "quantity": 1
 
     },
     {
         "id": "v6",
         "name": "Radish",
         "price": 20,
-        "image": "./vegetables/radish.png"
+        "image": "./vegetables/radish.png",
+        "quantity": 1
 
     },
     {
         "id": "v7",
         "name": "spinach",
         "price": 20,
-        "image": "./vegetables/spinach.png"
+        "image": "./vegetables/spinach.png",
+        "quantity": 1
 
     },
     {
         "id": "v8",
         "name": "Tomato",
         "price": 20,
-        "image": "./vegetables/tomato.png"
+        "image": "./vegetables/tomato.png",
+        "quantity": 1
 
     },
     {
         "id": "v9",
         "name": "Potato",
         "price": 20,
-        "image": "./vegetables/potato.png"
+        "image": "./vegetables/potato.png",
+        "quantity": 1
 
     },
     {
         "id": "v10",
         "name": "Cabbage",
         "price": 20,
-        "image": "./vegetables/cabbage.png"
+        "image": "./vegetables/cabbage.png",
+        "quantity": 1
 
     },
     {
         "id": "v11",
         "name": "EggPlant",
         "price": 20,
-        "image": "./vegetables/eggplant.png"
+        "image": "./vegetables/eggplant.png",
+        "quantity": 1
 
     },
     {
         "id": "v12",
         "name": "Brocli",
         "price": 20,
-        "image": "./vegetables/broccoli.png"
+        "image": "./vegetables/broccoli.png",
+        "quantity": 1
 
     }
     

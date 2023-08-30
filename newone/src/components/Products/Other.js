@@ -2,7 +2,7 @@ import React from 'react'
 import './products.css';
 import Others from './other.json';
 
-function Other() {
+function Other({handleClick,size,setshow}) {
   return (
     <>
     <h1 className="f-fruits">Grocery</h1>
@@ -15,7 +15,7 @@ function Other() {
                     <div className="info">
                         <h1 className="text">{item.name}</h1>
                         <p>{item.price}/Kg</p>
-                        <button className='btn'>Add To cart</button>
+                        <button className='btn' onClick={() => handleClick(item)}>Add To cart</button>
                     </div>
                 </div>
        )) }

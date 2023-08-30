@@ -7,12 +7,12 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 
-const Home = () => {
+const Home = ({size,setShow}) => {
   const location = useLocation()
   return (
     <div className="back">
         <body>
-            <Navbar/>
+            <Navbar size={size} setShow={setShow}/>
             <div className="img-container">
                 <img src="images/main.png" alt="main" className="img" />
             </div>

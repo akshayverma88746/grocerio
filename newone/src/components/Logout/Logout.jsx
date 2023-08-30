@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useContext } from 'react'
 import {useNavigate} from "react-router-dom";
-import {UserContext} from "C:/Users/Akshay/Desktop/grocerio - Copy/newone/src/App.js"
+import {UserContext} from "C:/Users/Akshay/Desktop/grocerio/newone/src/App.js"
 const Logout = () => {
   const {state, dispatch} = useContext(UserContext)
   const history = useNavigate();

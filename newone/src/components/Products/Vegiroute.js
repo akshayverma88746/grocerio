@@ -1,11 +1,9 @@
-import Products from './Products';
 import Vegetable from './Vegetable';
-import Other from './Other';
 import Category from './Category';
 import Navbar from '../Navbar/Navbar';
 import "./prod.css"
 
-function App() {
+function App({handleClick,size,setShow}) {
   return (
     <>
    
@@ -14,9 +12,9 @@ function App() {
     backgroundAttachment: 'fixed',
     backgroundSize: 'cover'
    }}>
-    <Navbar/>
+    <Navbar size={size} setShow={setShow}/>
     <Category/>
-    <Vegetable/>
+    <Vegetable handleClick={handleClick} size={size} setShow={setShow} />
    
     </div>
    

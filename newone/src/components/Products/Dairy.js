@@ -2,7 +2,7 @@ import React from 'react';
 import Dairys from './dairy.json';
 
 
-function Dairy() {
+function Dairy({handleClick,size,setShow}) {
   return (
     <>
     <h1 className="f-fruits">Dairy</h1>
@@ -15,7 +15,7 @@ function Dairy() {
                     <div className="info">
                         <h1 className="text">{item.name}</h1>
                         <p>{item.price}/Kg</p>
-                        <button className='btn'>Add to cart
+                        <button className='btn' onClick={() => handleClick(item)}>Add to cart
                         </button>
                     </div>
                 </div>

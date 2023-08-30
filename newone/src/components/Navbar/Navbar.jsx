@@ -3,7 +3,7 @@ import "./navbar.css"
 import {useNavigate, useLocation, Link} from "react-router-dom";
 import { ShoppingBasket, UserCircle2 } from 'lucide-react';
 import Dropdown from '../Dropdown/Dropdown';
-import {UserContext} from "C:/Users/Akshay/Desktop/grocerio - Copy/newone/src/App.js"
+import {UserContext} from "C:/Users/Akshay/Desktop/grocerio/newone/src/App.js"
 
 
 const Navbar = ({size, setShow}) => {
@@ -25,9 +25,12 @@ const Navbar = ({size, setShow}) => {
                             <li><Link to="/products">Products</Link></li>
                         </div>
                     </ul>
-                        <div className='cart' onClick={()=>setShow(false)}>
-                            <Link to="#"><ShoppingBasket size={25} color="#ffffff" /></Link>
+                        <Link to="/cart">
+                        <div className='cart' >
+                            <ShoppingBasket  color="#ffffff" />
+                            <span>{size}</span>
                         </div>
+                            </Link>
                         <div className='search-box'>
                             <input  className="search-txt" type="text" name=" " placeholder='Type to search'/>
                             <a className='search-btn' href='#'>
@@ -61,9 +64,12 @@ else{
                             <li><Link to="/products">Products</Link></li>
                         </div>
                     </ul>
-                        <div className='cart' onClick={()=>setShow(false)}>
-                            <Link to="#"><ShoppingBasket size={25} color="#ffffff" /></Link>
+                    <Link to="/cart">
+                        <div className='cart' >
+                            <ShoppingBasket  color="#ffffff" />
+                            <span>{size}</span>
                         </div>
+                            </Link>
                         <div className='search-box'>
                             <input  className="search-txt" type="text" name=" " placeholder='Type to search'/>
                             <a className='search-btn' href='#'>

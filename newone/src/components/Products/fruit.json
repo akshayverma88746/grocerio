@@ -3,85 +3,87 @@
         "id": "f1",
         "name": "Apple",
         "price": 20,
-        "image": "./fruits/apple.png"
-
-    },
+        "image": "./fruits/apple.png",
+         "quantity": 1
+          },
     {
         "id": "f2",
         "name": "Apricot",
         "price": 20,
-        "image": "./fruits/apricot.png"
-
-    },
+        "image": "./fruits/apricot.png",
+         "quantity": 1
+          },
     {
         "id": "f3",
         "name": "Avacado",
         "price": 20,
-        "image": "./fruits/avocado.png"
-
-    },
+        "image": "./fruits/avocado.png",
+         "quantity": 1
+          },
     {
         "id": "f4",
         "name": "Banana",
         "price": 20,
-        "image": "./fruits/banana.png.jpeg"
+        "image": "./fruits/banana.png.jpg",
+         "quantity": 1
+         
 
     },
     {
         "id": "f5",
         "name": "Cherry",
         "price": 20,
-        "image": "./fruits/cherry.png"
-
-    },
+        "image": "./fruits/cherry.png",
+         "quantity": 1
+          },
     {
         "id": "f6",
         "name": "Grapes",
         "price": 20,
-        "image": "./fruits/grapes.png"
-
-    },
+        "image": "./fruits/grapes.png",
+         "quantity": 1
+          },
     {
         "id": "f7",
         "name": "Kiwi",
         "price": 20,
-        "image": "./fruits/kiwi.png"
-
-    },
+        "image": "./fruits/kiwi.png",
+         "quantity": 1
+          },
     {
         "id": "f8",
         "name": "Mango",
         "price": 20,
-        "image": "./fruits/mango.png"
-
-    }
+        "image": "./fruits/mango.png",
+         "quantity": 1
+          }
     ,
     {
         "id": "f9",
         "name": "Orange",
         "price": 20,
-        "image": "./fruits/orange.png"
-
-    },
+        "image": "./fruits/orange.png",
+         "quantity": 1
+          },
     {
         "id": "f10",
         "name": "Papaya",
         "price": 20,
-        "image": "./fruits/papaya.png"
-
-    },
+        "image": "./fruits/papaya.png",
+         "quantity": 1
+          },
     {
         "id": "f11",
         "name": "Pineapple",
         "price": 20,
-        "image": "./fruits/pineapple.png"
-
-    },
+        "image": "./fruits/pineapple.png",
+         "quantity": 1
+          },
     {
         "id": "f12",
         "name": "Strawberry",
         "price": 20,
-        "image": "./fruits/strawberry.png"
-
-    }
+        "image": "./fruits/strawberry.png",
+         "quantity": 1
+          }
 ]
