@@ -25,7 +25,7 @@ const Cart = ({cart, setCart, handleChange,setShow,size}) => {
 
   return (
     <article>
-    <Navbar size={size} setShow={setShow}/>
+        <Navbar size={size} setShow={setShow}/>
         {
             cart?.map((item)=>(
                 <div className="cart_box" key={item.id}>
@@ -34,14 +34,14 @@ const Cart = ({cart, setCart, handleChange,setShow,size}) => {
                         <p>{item.name}</p>
                     </div>
                     <div>
-                    <button onClick={()=>handleChange(item, -1)}> - </button>
-                    <button>{item.quantity}</button>
-                        <button onClick={()=>handleChange(item, +1)}> + </button>
+                    <button style={{borderRadius: '56% 0% 0% 55% / 42% 25% 25% 42%'}} onClick={()=>handleChange(item, -1)}> - </button>
+                    <button style={{borderRadius: '12% 11% 11% 14% / 14% 14% 12% 12%'}}>{item.quantity}</button>
+                        <button style={{borderRadius: '0% 54% 51% 0% / 19% 43% 45% 23%'}} onClick={()=>handleChange(item, +1)}> + </button>
                        
                         
                     </div>
                     <div>
-                        <span>{item.price}</span>
+                        <span style={{color: 'white'}}>{item.price}</span>
                         <button onClick={()=>handleRemove(item.id)} >Remove</button>
                     </div>
                 </div>

@@ -207,7 +207,7 @@ const Home = ({size,setShow}) => {
                         <div className="contact_box_section">
                         <div className="map_section">
                             <div style={{width: '100%'}}>
-                                <iframe style={{borderRadius:"30px"}} width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.3791616049!2d77.98489026778655!3d30.270003229183253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9518933719%3A0xc25309614b33ceb1!2sBharu%20Wala%20Grant%2C%20Uttarakhand%20248002!5e0!3m2!1sen!2sin!4v1691942158357!5m2!1sen!2sin"><a href="https://www.maps.ie/population/">Population mapping</a></iframe>
+                                <iframe title='map' style={{borderRadius:"30px"}} width="100%" height="600" frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13783.3791616049!2d77.98489026778655!3d30.270003229183253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9518933719%3A0xc25309614b33ceb1!2sBharu%20Wala%20Grant%2C%20Uttarakhand%20248002!5e0!3m2!1sen!2sin!4v1691942158357!5m2!1sen!2sin"><a href="https://www.maps.ie/population/">Population mapping</a></iframe>
                             </div>
                         </div>
                         <div className="form_section">
@@ -215,11 +215,11 @@ const Home = ({size,setShow}) => {
                                 
                                 <div className="input_group">
                                     <div className="input_box">
-                                        <label for="firstname" className="label">Firstname</label>
+                                        <label htmlFor="firstname" className="label">Firstname</label>
                                         <input type="text" className="input" placeholder="Enter your firstname"/>
                                     </div>
                                     <div className="input_box">
-                                        <label for="lastname" className="label">Lastname</label>
+                                        <label htmlFor="lastname" className="label">Lastname</label>
                                         <input type="text" className="input" placeholder="Enter your lastname"/>
                     
                                     </div>
@@ -227,18 +227,18 @@ const Home = ({size,setShow}) => {
                                 
                                 <div className="input_group">
                                     <div className="input_box">
-                                        <label for="email" className="label">Email</label>
+                                        <label htmlFor="email" className="label">Email</label>
                                         <input type="email" className="input" placeholder="grocerio@gmail.com"/>
                                     </div>
                                     <div className="input_box">
-                                        <label for="subject" className="label">Subject </label>
+                                        <label htmlFor="subject" className="label">Subject </label>
                                         <input type="text" className="input" placeholder="e.g. Related to "/>
                     
                                     </div>
                                 </div>
                                 
                                 <div className="message_box">
-                                    <label for="project_desc" className="label">Message</label>
+                                    <label htmlFor="project_desc" className="label">Message</label>
                                     <textarea name="project_desc" id="project_desc" cols="30" rows="6" placeholder="Feel free to write "></textarea>
                                 </div>
                                 <button className="button-18">Submit</button>
