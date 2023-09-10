@@ -3,7 +3,7 @@ import "./navbar.css"
 import {useNavigate, useLocation, Link} from "react-router-dom";
 import { ShoppingBasket, UserCircle2 } from 'lucide-react';
 import Dropdown from '../Dropdown/Dropdown';
-import {UserContext} from "C:/Users/Akshay/Desktop/grocerio/newone/src/App.js"
+import {UserContext} from "../../App"
 
 
 const Navbar = ({size, setShow}) => {

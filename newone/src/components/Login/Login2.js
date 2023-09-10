@@ -10,7 +10,7 @@ import * as Components from './components';
 import Home from "../Home/Home"
 import "./Styles.css";
 import e from "cors";
-import {UserContext} from "C:/Users/Akshay/Desktop/grocerio/newone/src/App.js"
+import {UserContext} from "../../App"
 
 function Login2() {
     const {state, dispatch} = useContext(UserContext)
@@ -76,7 +76,7 @@ function Login2() {
             navigate("/")
         }
         else{
-            window.alert(`Error`)
+            window.alert(`Error`);
         }
     }
     

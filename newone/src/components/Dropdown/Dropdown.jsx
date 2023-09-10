@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import "./dropdown.css"
 import {useNavigate, useLocation,BrowserRouter as Router, Link, NavLink, useHistory} from "react-router-dom";
-import {UserContext} from "C:/Users/Akshay/Desktop/grocerio/newone/src/App.js"
+import {UserContext} from "../../App"
 const Dropdown = () => {
   const {state, dispatch} = useContext(UserContext);
   const history = useNavigate();
