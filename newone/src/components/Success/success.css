@@ -1,0 +1,19 @@
+.success-img{
+    margin-top: -2rem;
+    margin-left: 39rem;
+    height: 40rem;
+    width: 40rem;
+    margin-bottom: -3rem;
+}
+
+.check{
+    margin-left: 57rem;
+    height: 6rem;
+    width: 6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.check:hover {
+    transform: scale(1.1);
+  }
+  

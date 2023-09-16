@@ -9,6 +9,7 @@ import Dairyroute from './components/Products/Dairyroute'
 import Otherroute from './components/Products/Otherroute'
 import Profile from './components/Profile/Profile';
 import Logout from './components/Logout/Logout';
+import Success from './components/Success/Success';
 import { createContext, useReducer, useState} from 'react';
 import { initialState, reducer } from './reducer/UseReducer';
 export const UserContext = createContext();
@@ -63,6 +64,7 @@ const  App = () => {
         <Route path='/cart' element={<Cart cart={cart} size={cart.length} setShow={setShow} handleChange={handleChange} setCart={setCart}/>}/>
         <Route exact path = "/profile" Component={Profile}/>
         <Route exact path = "/logout" Component={Logout}/>
+        <Route exact path = "/success" Component={Success}/>
       </Routes>
     </Router>
    </UserContext.Provider>

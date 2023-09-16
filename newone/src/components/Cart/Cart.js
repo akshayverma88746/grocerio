@@ -1,7 +1,11 @@
 import React,{useState} from 'react';
 import { useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import "./cart.css";
 import Navbar from '../Navbar/Navbar';
+import {loadStripe} from '@stripe/stripe-js';
+
+
 const Cart = ({cart, setCart, handleChange,setShow,size}) => {
     const [price, setPrice] = useState(0);
     console.log(cart)
@@ -18,7 +22,22 @@ const Cart = ({cart, setCart, handleChange,setShow,size}) => {
         setCart(arr);
         // handlePrice();
     }
-
+    
+    const handlePayment =async() =>{
+        const stripePromise = await loadStripe(process.env.REACT_APP_STRIPE_PUBLISHABLE_KEY)
+        const res = await fetch("http://localhost:3001/checkout-payment",{
+            method:"POST",
+            headers:{
+                "content-type":"application/json"
+            },
+            body:JSON.stringify(cart)
+        })
+        if(res.statusCode === 500)return;
+        const data = await res.json()
+        console.log(data)
+        toast.success("Redirecting to payment gateway")
+        stripePromise.redirectToCheckout({sessionId:data})
+    }
     useEffect(()=>{
         handlePrice();
     },[cart]);
@@ -49,7 +68,7 @@ const Cart = ({cart, setCart, handleChange,setShow,size}) => {
         <div className='total'>
             <span>Total Price of your Cart</span>
             <span>Rs - {price}</span>
-            <button className="payment-button">Proceed to Payment</button>
+            <button className="payment-button" onClick={handlePayment}>Proceed to Payment</button>
         </div>
     </article>
   )

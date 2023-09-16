@@ -5,6 +5,7 @@ const bcrypt = require("bcryptjs");
 const cookieParser = require("cookie-parser");
 const jwt = require("jsonwebtoken");
 const secret_key = "hkfkhgk649fkfk3949dfkddkrtttef";
+const Stripe = require("stripe");
 
 const saltRound = 12;
 
@@ -126,5 +127,42 @@ router.get("/logout",  (req, res) => {
     res.status(200).send(`logout success`)
 });
 
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+router.post("/checkout-payment",async(req,res)=>{
+  try{
+    const params = {
+      submit_type: "pay",
+      mode: "payment",
+      payment_method_types: ["card"],
+      billing_address_collection: "auto",
+      shipping_options: [{shipping_rate:"shr_1Nr2EbSEBbXXQcwWgNOH67Mf"}],
+      line_items: req.body.map((item)=>{
+        return{
+          price_data :{
+            currency: "inr",
+            product_data:{
+              name: item.name,
+              images: [item.image],
+            },
+            unit_amount: item.price * 100,
+          },
+          adjustable_quantity:{
+            enabled: true,
+            minimum: 1,
+            maximum: 10,
+          },
+          quantity: item.quantity
+        }
+      }),
+      success_url: "http://localhost:3000/success",
+      cancel_url: "http://localhost:3000/cancel",
+    }
+    const session = await stripe.checkout.sessions.create(params)
+    res.status(200).json(session.id)
+  }
+  catch (err) {
+    res.status(err.statusCode || 500).json(err.message)
+  }
+})
 
 module.exports = router;
